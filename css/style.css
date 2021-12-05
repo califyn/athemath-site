@@ -938,6 +938,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
+  max-width: 200px;
 }
 
 .legal-content {
