@@ -933,6 +933,24 @@ a:hover {
   }
 }
 
+.shoutout-box {
+	color: #a02828;
+    margin-left: 9vw;
+    margin-right: 20vw;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: #a02828 solid 1px;
+    font-style: italic;
+    background: #fff7f7;
+}
+
+@media (max-width: 500px) {
+	.shoutout-box {
+		margin-right: 9vw;
+	}
+}
+
 .donor-logo {
   display: block;
   margin-left: auto;
