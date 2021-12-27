@@ -1,2 +1,3 @@
 RedirectPermanent /latex https://www.overleaf.com/read/jvnbvcvtjbpf/
-RedirectPermanent /apply https://docs.google.com/forms/d/e/1FAIpQLSdQ9LCqLbWyRQrcJSPWfk5L798CG95RP-CwV6h7UWiKAWE07A/viewform?usp=sf_link
+Redirect 302 /apply https://docs.google.com/forms/d/e/1FAIpQLSfLEKqw_loci-eTS43reFJN0vYhFPF1SDXGoaYI0Y3DUUkeSA/viewform?usp=sf_link 
+Redirect 302 /winter-apply https://docs.google.com/forms/d/e/1FAIpQLSdQ9LCqLbWyRQrcJSPWfk5L798CG95RP-CwV6h7UWiKAWE07A/viewform?usp=sf_link
