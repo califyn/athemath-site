@@ -1007,3 +1007,8 @@ a:hover {
   padding: 40px;
   padding-bottom: 50px;
 }
+
+.some-image-class {
+  width: 80%;
+  padding-left: 10%;
+}
