@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 EXEMPT_TIDY_ARRAY=(html/{header,footer}.html html/catalog/{header,footer}.html)
 
 readarray -t HTML_PRETTIER_ARRAY <"index.html"
@@ -14,5 +16,7 @@ for target in "${EXEMPT_TIDY_ARRAY[@]}"; do
   done
 done
 
-tidy -config tidyrc -m "${HTML_TIDY_ARRAY[@]}"
-prettier -w "${HTML_PRETTIER_ARRAY[@]}"
+tidy -config tidyrc -qe "${HTML_TIDY_ARRAY[@]}"
+if command -v prettier; then
+  prettier --check "${HTML_PRETTIER_ARRAY[@]}"
+fi
