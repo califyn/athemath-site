@@ -1,4 +1,4 @@
 #!/bin/bash
-#
+
 set -euxo pipefail
-prettier -w ./index.html ./html/*.html
+prettier -w ./index.html ./html/**.html ./html/**/*.html
