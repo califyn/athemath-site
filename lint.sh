@@ -16,7 +16,18 @@ for target in "${EXEMPT_TIDY_ARRAY[@]}"; do
   done
 done
 
+echo "Targets for tidy..."
+for target in "${HTML_TIDY_ARRAY[@]}"; do
+  echo "$target"
+done
 tidy -config tidyrc -qe "${HTML_TIDY_ARRAY[@]}"
+echo "----------------------------------------"
+
 if command -v prettier; then
+  echo "Targets for prettier..."
+  for target in "${HTML_PRETTIER_ARRAY[@]}"; do
+    echo "$target"
+  done
+
   prettier --check "${HTML_PRETTIER_ARRAY[@]}"
 fi
