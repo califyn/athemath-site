@@ -1021,11 +1021,12 @@ figure {
    }
 
 figcaption {
-      font-family: Arial, sans-serif;
+      font-family: 'lora';
       font-size: 14px;
       font-weight: bold;
-      color: white;
+      color: #a02828;
       margin-top: 10px;
-      background-color: #f1f;
+      background-color: transparent;
       padding: 5px;
+      text-align: center;
    }
